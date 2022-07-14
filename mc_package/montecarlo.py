@@ -187,6 +187,7 @@ class Analyzer():
     df_to_ret = pd.DataFrame([])
     face_counts = pd.DataFrame([])
     eq_rows = pd.DataFrame([])
+    type_df = ''
     
     def __init__(self, game):
         '''
@@ -196,6 +197,8 @@ class Analyzer():
         '''
         # initializes game
         self.game = game
+        for i in game_play.show_results().dtypes:
+            self.type_df = i
         
     def jackpot(self):
         '''
