@@ -21,6 +21,7 @@ Demo for importing:
     
 
 Demo for creating and using Die class/methods:
+
     # creating a new die object with 6 faces, all of which have weights initialized to 1.0
         new_die = Die([1,2,3,4,5,6])
     # changing the weight of face 6 to be 5.0
@@ -31,6 +32,7 @@ Demo for creating and using Die class/methods:
         new_die.show_die()
 
 Demo for creating and using Game class/methods:
+
     # creating a new Game object using 3 die objects - they can be different dice but need to have the same number of faces
         new_game = Game([new_die,new_die,new_die])
     # rolling each of the dice 500 times and keeping track of each die's outcome for each roll
@@ -41,6 +43,7 @@ Demo for creating and using Game class/methods:
         new_game.show_results('narrow')
 
 Demo for creating and using Analyzer class/methods:
+
     # creating a new analyzer object from a game
         new_analyer = Analyzer(new_game)
     # saving the integer number of jackpots into the 'jackpots' variable
@@ -57,12 +60,21 @@ Demo for creating and using Analyzer class/methods:
 API DESCRIPTION
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Die() class:
+
 docstring:  
+
             purpose: creates a die object with various faces, face weights, and number of rolls and returns the rolled die object
+            
             inputs: array of faces for the die object, weight to change/new weight, number of times die object is rolled
+            
             outputs: die objects that have been rolled a certain amount of times with certain face weights
-            methods: weight_change(): changes weight of 1 die face
+            
+            methods: 
+                     
+                     weight_change(): changes weight of 1 die face
+            
                      roll(): rolls the die a certain amount of times
+                     
                      show_die(): shows the die faces and respective weights
 attributes: 
 
