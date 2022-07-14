@@ -218,13 +218,9 @@ Files:
 
     mc_package
     
+        __init__.py
+        
         montecarlo.py
-        
-        montecarlo_tests.py
-        
-        montecarlo_tests_output.txt
-        
-        montecarlo_demo.ipynb
         
     setup.py
     
@@ -233,6 +229,12 @@ Files:
     LICENSE
     
     .gitignore
+    
+    montecarlo_tests.py
+        
+    montecarlo_tests_output.txt
+        
+    montecarlo_demo.ipynb
     
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------
