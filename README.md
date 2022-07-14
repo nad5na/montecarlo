@@ -78,6 +78,10 @@ docstring:
                      show_die(): shows the die faces and respective weights
 attributes: 
 
+            none
+            
+methods:
+
     __init__() method:
         parameters: (faces_init) array/list of die object 'face' values with dtype either strings or numbers
         return values: none
@@ -109,13 +113,20 @@ attributes:
         
         
 Game() class:
+
 docstring:  
+
             purpose: take a number of Die objects (all with same faces) and roll them a certain amount of times, keeping track of outputs
+            
             inputs: list of the dice objects that will be used, number of rolls for each die object, form for the output the game dataframe will be returned
+            
             outputs: dataframe (wide or narrow) of the outcome of the 'roll' of each die object for each roll
+            
             methods: play(): rolls a number of Die objects a number of times and keeps track of the outcomes
-                     show_results(): displays the outcomes from play() in either a wide table format or narrow table format
+                     show_results(): displays the outcomes from play() in either a wide table format or narrow table format               
 attributes: 
+
+            none
 
     __init__() method:
         parameters: list of created Die() objects
@@ -140,14 +151,26 @@ attributes:
         
 
 Analyzer() class:
+
 docstring:      
+            
             purpose: performs various analyses on the results from a Game of Die objects
+            
             inputs: a Game object in which a certain amount of 'dice' have been rolled a certain number of times
-            outputs/methods: jackpot - number of times that all faces of die objects rolled were equal
+            
+            outputs/methods: 
+                             
+                             jackpot - number of times that all faces of die objects rolled were equal
+                             
                              combo - a dataframe of the distinct permutations* (I spoke with the professor on Tuesday and he said that due to confusion on Monday when someone was told to use permutations instead of combinations, I could leave this method as computing the permutations) from the dice rolls and the amount of times that they occured in the Game, with permutations as the index
-                             face counts - a dataframe with roll number from the game as the index, and columns for each possible Die face value populated (in each roll row, respectively) with the number of times that face appeared during that roll
-attributes: (df_to_ret) an object that will hold the dataframe produced by the combo() method
+                             
+                             face counts - a dataframe with roll number from the game as the index, and columns for each possible Die face value populated (in each roll row, respectively) with the number of times that face appeared during that roll    
+attributes: 
+
+            (df_to_ret) an object that will hold the dataframe produced by the combo() method
+            
             (face_counts) an object that will hold the dataframe produced by the face_counts() method
+            
             (eq_rows) an object that will hold the dataframe produced byt the jackpot() method
 
     __init__() method:
