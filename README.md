@@ -128,6 +128,8 @@ attributes:
 
             none
 
+methods:
+
     __init__() method:
         parameters: list of created Die() objects
         return values: none
@@ -172,6 +174,7 @@ attributes:
             (face_counts) an object that will hold the dataframe produced by the face_counts() method
             
             (eq_rows) an object that will hold the dataframe produced byt the jackpot() method
+methods:
 
     __init__() method:
         parameters: a Game() object that has been created
