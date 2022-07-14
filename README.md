@@ -17,14 +17,21 @@ Affiliation: UVA MSDS
 SYNOPSIS
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Demo for installing:
+
     # (on your local machine (bash))
+    
     git clone https://github.com/nad5na/montecarlo.git
+    
     pip install -e .
 
 Demo for importing:
+
     # (in the local directory that the previous ^ commands were run in)
+    
     cd montecarlo
+    
     python
+    
     from mc_package.montecarlo import Die, Game, Analyzer
 
 Demo for creating and using Die class/methods:
