@@ -22,13 +22,13 @@ Demo for installing:
     
     git clone https://github.com/nad5na/montecarlo.git
     
+    cd montecarlo
+    
     pip install -e .
 
 Demo for importing:
 
     # (in the local directory that the previous ^ commands were run in)
-    
-    cd montecarlo
     
     python
     
