@@ -61,7 +61,7 @@ Demo for creating and using Analyzer class/methods:
 
 API DESCRIPTION
 ------------------------------------------------------------------------------------------------------------------------------------------------
-Die() class:
+# Die() class:
 
 docstring:  
 
@@ -114,7 +114,7 @@ methods:
                     outputs: a dataframe with roll number as the index & columns for faces and face weights
         
         
-Game() class:
+# Game() class:
 
 docstring:  
 
@@ -154,7 +154,7 @@ methods:
                     outputs: either a wide dataframe (N rolls by M dice) or a narrow dataframe (indexes for rolls & dice, one column for roll outcomes)
         
 
-Analyzer() class:
+# Analyzer() class:
 
 docstring:      
             
