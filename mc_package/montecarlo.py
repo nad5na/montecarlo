@@ -12,6 +12,8 @@ class Die():
              roll(): rolls the die a certain amount of times
              show_die(): shows the die faces and respective weights
     '''
+    # creating private die
+    __die_df = pd.DataFrame([])
     
     def __init__(self, faces_init):
         '''
