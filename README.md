@@ -57,7 +57,8 @@ Demo for creating and using Analyzer class/methods:
 API DESCRIPTION
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Die() class:
-docstring:  purpose: creates a die object with various faces, face weights, and number of rolls and returns the rolled die object
+docstring:  
+            purpose: creates a die object with various faces, face weights, and number of rolls and returns the rolled die object
             inputs: array of faces for the die object, weight to change/new weight, number of times die object is rolled
             outputs: die objects that have been rolled a certain amount of times with certain face weights
             methods: weight_change(): changes weight of 1 die face
@@ -96,7 +97,8 @@ attributes:
         
         
 Game() class:
-docstring:  purpose: take a number of Die objects (all with same faces) and roll them a certain amount of times, keeping track of outputs
+docstring:  
+            purpose: take a number of Die objects (all with same faces) and roll them a certain amount of times, keeping track of outputs
             inputs: list of the dice objects that will be used, number of rolls for each die object, form for the output the game dataframe will be returned
             outputs: dataframe (wide or narrow) of the outcome of the 'roll' of each die object for each roll
             methods: play(): rolls a number of Die objects a number of times and keeps track of the outcomes
@@ -126,11 +128,12 @@ attributes:
         
 
 Analyzer() class:
-docstring:      purpose: performs various analyses on the results from a Game of Die objects
-                inputs: a Game object in which a certain amount of 'dice' have been rolled a certain number of times
-                outputs/methods: jackpot - number of times that all faces of die objects rolled were equal
-                         combo - a dataframe of the distinct permutations* (I spoke with the professor on Tuesday and he said that due to confusion on Monday when someone was told to use permutations instead of combinations, I could leave this method as computing the permutations) from the dice rolls and the amount of times that they occured in the Game, with permutations as the index
-                         face counts - a dataframe with roll number from the game as the index, and columns for each possible Die face value populated (in each roll row, respectively) with the number of times that face appeared during that roll
+docstring:      
+            purpose: performs various analyses on the results from a Game of Die objects
+            inputs: a Game object in which a certain amount of 'dice' have been rolled a certain number of times
+            outputs/methods: jackpot - number of times that all faces of die objects rolled were equal
+                             combo - a dataframe of the distinct permutations* (I spoke with the professor on Tuesday and he said that due to confusion on Monday when someone was told to use permutations instead of combinations, I could leave this method as computing the permutations) from the dice rolls and the amount of times that they occured in the Game, with permutations as the index
+                             face counts - a dataframe with roll number from the game as the index, and columns for each possible Die face value populated (in each roll row, respectively) with the number of times that face appeared during that roll
 attributes: (df_to_ret) an object that will hold the dataframe produced by the combo() method
             (face_counts) an object that will hold the dataframe produced by the face_counts() method
             (eq_rows) an object that will hold the dataframe produced byt the jackpot() method
@@ -172,15 +175,15 @@ attributes: (df_to_ret) an object that will hold the dataframe produced by the c
 MANIFEST
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Files:
-    -mc_package
-    ----montecarlo.py
-    ----montecarlo_tests.py
-    ----montecarlo_tests_output.txt
-    ----montecarlo_demo.ipynb
-    -setup.py
-    -README.mg
-    -LICENSE
-    -.gitignore
+    mc_package
+        montecarlo.py
+        montecarlo_tests.py
+        montecarlo_tests_output.txt
+        montecarlo_demo.ipynb
+    setup.py
+    README.mg
+    LICENSE
+    .gitignore
     
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------
