@@ -198,7 +198,7 @@ class Analyzer():
         '''
         # initializes game
         self.game = game
-        for i in game_play.show_results().dtypes:
+        for i in self.game.show_results().dtypes:
             self.type_df = i
         
     def jackpot(self):
