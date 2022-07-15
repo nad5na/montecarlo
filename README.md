@@ -79,7 +79,7 @@ docstring:
 
             purpose: creates a die object with various faces, face weights, and number of rolls and returns the rolled die object
             
-            inputs: array of faces for the die object, weight to change/new weight, number of times die object is rolled
+            inputs: array of face values for the die object
             
             outputs: die objects that have been rolled a certain amount of times with certain face weights
             
@@ -90,18 +90,11 @@ docstring:
                      roll(): rolls the die a certain amount of times
                      
                      show_die(): shows the die faces and respective weights
-attributes: 
+publicly shared attributes: 
 
             none
             
 methods:
-
-    __init__() method:
-        parameters: (faces_init) array/list of die object 'face' values with dtype either strings or numbers
-        return values: none
-        docstring:  purpose: initializes the die object and sets all face weights equal to 1 originally
-                    inputs: an array of faces that the die object will have (length = number of faces)
-                    outputs: saves the faces and weights to the die_df dataframe that the other 3 methods will use
         
     weight_change() method:
         parameters: (face_to_change) a string or number in the array of faces from __init__ - it is checked to make sure input is in faces array
@@ -132,24 +125,17 @@ docstring:
 
             purpose: take a number of Die objects (all with same faces) and roll them a certain amount of times, keeping track of outputs
             
-            inputs: list of the dice objects that will be used, number of rolls for each die object, form for the output the game dataframe will be returned
+            inputs: list of the dice objects that will be used
             
             outputs: dataframe (wide or narrow) of the outcome of the 'roll' of each die object for each roll
             
             methods: play(): rolls a number of Die objects a number of times and keeps track of the outcomes
                      show_results(): displays the outcomes from play() in either a wide table format or narrow table format               
-attributes: 
+publicly shared attributes: 
 
             none
 
 methods:
-
-    __init__() method:
-        parameters: list of created Die() objects
-        return values: none
-        docstring:  purpose: takes list of Die objects and gets them ready to be rolled a certain amount of times
-                    inputs: list of Die objects
-                    outputs: none
         
     play() method:
         parameters: number (convertible to int) for how man times the Die object is to be rolled
@@ -181,7 +167,7 @@ docstring:
                              combo - a dataframe of the distinct permutations* (I spoke with the professor on Tuesday and he said that due to confusion on Monday when someone was told to use permutations instead of combinations, I could leave this method as computing the permutations) from the dice rolls and the amount of times that they occured in the Game, with permutations as the index
                              
                              face counts - a dataframe with roll number from the game as the index, and columns for each possible Die face value populated (in each roll row, respectively) with the number of times that face appeared during that roll    
-attributes: 
+publicly shared attributes: 
 
             (df_to_ret) an object that will hold the dataframe produced by the combo() method
             
@@ -189,13 +175,6 @@ attributes:
             
             (eq_rows) an object that will hold the dataframe produced byt the jackpot() method
 methods:
-
-    __init__() method:
-        parameters: a Game() object that has been created
-        return values: none
-        docstring:  purpose: initializing the analyzer object
-                    inputs: a Game object in which a certain amount of 'dice' have been rolled a certain number of times
-                    outputs: number of times that all faces of die objects rolled were equal
         
     jackpot() method:
         parameters: none
