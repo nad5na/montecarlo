@@ -1,5 +1,5 @@
 ##########################################################################################################################################
-# NECESSARY IMPORTS
+# IMPORTS
 ##########################################################################################################################################
 
 from montecarlo import Die
@@ -193,6 +193,3 @@ class MonteCarloTestSuite(unittest.TestCase):
         
         
 unittest.main(argv=['first-arg-is-ignored'], exit=False);   
-
-# results piped to montecarlo_tests_output.txt
-# !python montecarlo_tests.py 2> montecarlo_tests_output.txt
